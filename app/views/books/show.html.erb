@@ -1,0 +1,19 @@
+
+    <p id="notice">Book was successfully created.</p>
+
+<p>
+  <strong>Title:</strong>
+  タイトル
+</p>
+
+<p>
+  <strong>Body:</strong>
+  本文
+
+</p>
+
+<a class="back" href="/books">Back</a>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+
+<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
